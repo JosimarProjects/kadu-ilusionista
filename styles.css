@@ -76,6 +76,7 @@ body {
     height: 35%;
     background: linear-gradient(to bottom, transparent 0%, var(--color-bg-dark) 100%);
     pointer-events: none;
+    z-index: 1;
 }
 
 .hero-image {
