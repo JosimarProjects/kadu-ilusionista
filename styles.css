@@ -166,7 +166,8 @@ body {
     .hero {
         padding: 1rem;
         min-height: 100vh;
-        padding-top: 1.5rem;
+        justify-content: flex-start;
+        padding-top: 1rem;
     }
 
     .logo {
@@ -176,11 +177,11 @@ body {
     }
 
     .image-container {
-        margin-bottom: -2rem;
+        margin-bottom: -1.5rem;
     }
 
     .hero-image {
-        max-height: 40vh;
+        max-height: 45vh;
     }
 
     .headline {
