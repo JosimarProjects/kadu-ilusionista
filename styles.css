@@ -186,16 +186,16 @@ body {
     }
 
     .image-container {
-        margin-bottom: -2rem;
+        margin-bottom: 0;
     }
 
     .image-container::after {
-        height: 50%;
-        background: linear-gradient(to bottom, transparent 0%, var(--color-bg-dark) 90%);
+        height: 40%;
+        background: linear-gradient(to bottom, transparent 0%, var(--color-bg-dark) 100%);
     }
 
     .hero-image {
-        max-height: 55vh;
+        max-height: 50vh;
     }
 
     .headline {
@@ -205,6 +205,7 @@ body {
         line-height: 1.5;
         position: relative;
         z-index: 2;
+        margin-top: 0.5rem;
     }
 
     .cta-button {
