@@ -63,7 +63,19 @@ body {
 }
 
 .image-container {
-    margin-bottom: clamp(1rem, 3vh, 2rem);
+    margin-bottom: clamp(0.5rem, 2vh, 1.5rem);
+    position: relative;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to bottom, transparent 0%, var(--color-bg-dark) 100%);
+    pointer-events: none;
 }
 
 .hero-image {
@@ -154,15 +166,37 @@ body {
 @media (max-width: 480px) {
     .hero {
         padding: 1rem;
+        min-height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .logo {
         letter-spacing: 0.2em;
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        margin-bottom: 0.5rem;
+    }
+
+    .image-container {
+        margin-bottom: 0;
+    }
+
+    .hero-image {
+        max-height: 35vh;
+    }
+
+    .headline {
+        margin-bottom: 1.5rem;
     }
 
     .cta-button {
         width: 100%;
         max-width: 300px;
+    }
+
+    .email-link {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
