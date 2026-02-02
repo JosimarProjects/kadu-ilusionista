@@ -63,7 +63,7 @@ body {
 }
 
 .image-container {
-    margin-bottom: clamp(0.5rem, 2vh, 1.5rem);
+    margin-bottom: -1rem;
     position: relative;
 }
 
@@ -71,9 +71,9 @@ body {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
+    left: -20%;
+    right: -20%;
+    height: 35%;
     background: linear-gradient(to bottom, transparent 0%, var(--color-bg-dark) 100%);
     pointer-events: none;
 }
@@ -82,8 +82,7 @@ body {
     max-width: 100%;
     height: auto;
     width: auto;
-    max-height: clamp(200px, 45vh, 500px);
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+    max-height: clamp(250px, 50vh, 550px);
 }
 
 .headline {
@@ -166,9 +165,8 @@ body {
 @media (max-width: 480px) {
     .hero {
         padding: 1rem;
-        min-height: auto;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        min-height: 100vh;
+        padding-top: 1.5rem;
     }
 
     .logo {
@@ -178,11 +176,11 @@ body {
     }
 
     .image-container {
-        margin-bottom: 0;
+        margin-bottom: -2rem;
     }
 
     .hero-image {
-        max-height: 35vh;
+        max-height: 40vh;
     }
 
     .headline {
@@ -196,7 +194,6 @@ body {
 
     .email-link {
         margin-top: 1rem;
-        margin-bottom: 1rem;
     }
 }
 
