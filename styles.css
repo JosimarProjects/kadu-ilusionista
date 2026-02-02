@@ -162,18 +162,23 @@ body {
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .hero {
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         min-height: 100vh;
+        min-height: 100dvh;
         justify-content: flex-start;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    .hero-content {
+        padding-top: 0;
     }
 
     .logo {
         letter-spacing: 0.2em;
         font-size: clamp(1.2rem, 5vw, 1.8rem);
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
     }
 
     .image-container {
@@ -181,20 +186,22 @@ body {
     }
 
     .hero-image {
-        max-height: 45vh;
+        max-height: 50vh;
     }
 
     .headline {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.2rem;
+        font-size: clamp(0.95rem, 4vw, 1.2rem);
     }
 
     .cta-button {
         width: 100%;
         max-width: 300px;
+        padding: 0.9rem 2rem;
     }
 
     .email-link {
-        margin-top: 1rem;
+        margin-top: 0.8rem;
     }
 }
 
