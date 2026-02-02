@@ -164,44 +164,59 @@ body {
 /* Mobile */
 @media (max-width: 600px) {
     .hero {
-        padding: 0.5rem 1rem;
+        padding: 0 1rem;
         min-height: 100vh;
         min-height: 100dvh;
-        justify-content: flex-start;
-        padding-top: 0.5rem;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-content {
-        padding-top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10vh;
     }
 
     .logo {
-        letter-spacing: 0.2em;
-        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        letter-spacing: 0.15em;
+        font-size: clamp(1.1rem, 5vw, 1.6rem);
         margin-bottom: 0.3rem;
     }
 
     .image-container {
-        margin-bottom: -1.5rem;
+        margin-bottom: -2rem;
+    }
+
+    .image-container::after {
+        height: 50%;
+        background: linear-gradient(to bottom, transparent 0%, var(--color-bg-dark) 90%);
     }
 
     .hero-image {
-        max-height: 50vh;
+        max-height: 55vh;
     }
 
     .headline {
         margin-bottom: 1.2rem;
-        font-size: clamp(0.95rem, 4vw, 1.2rem);
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+        padding: 0 0.5rem;
+        line-height: 1.5;
+        position: relative;
+        z-index: 2;
     }
 
     .cta-button {
         width: 100%;
-        max-width: 300px;
-        padding: 0.9rem 2rem;
+        max-width: 280px;
+        padding: 0.85rem 1.5rem;
+        font-size: 0.95rem;
     }
 
     .email-link {
         margin-top: 0.8rem;
+        font-size: 0.85rem;
     }
 }
 
